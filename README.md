@@ -111,4 +111,207 @@ CampusConnect is a modern social networking platform specifically designed for a
 - **npm** - Frontend package management
 - **VS Code** - Code editor
 
-## 📁 Project Structure
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 16+ and npm
+- Java 17 or higher
+- Maven 3.8+
+- MySQL 8.0 or PostgreSQL
+- Docker (optional, for MySQL)
+
+### Clone Repository
+```bash
+git clone https://github.com/YOUR_USERNAME/campusconnect.git
+cd campusconnect
+```
+
+## 📦 Installation
+
+### Backend Setup
+```bash
+cd campusconnect-backend
+
+# Install dependencies
+mvn install
+
+# Build project
+mvn clean build
+```
+
+### Frontend Setup
+```bash
+cd campusconnect-frontend
+
+# Install dependencies
+npm install
+
+# Create environment file
+echo "REACT_APP_API_URL=http://localhost:8080/api" > .env.local
+```
+
+## ▶️ Running Locally
+
+### Start MySQL (Docker)
+```bash
+docker run --name campusconnect-mysql \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=campusconnect \
+  -p 3306:3306 \
+  -d mysql:8.0
+```
+
+### Start Backend
+```bash
+cd campusconnect-backend
+mvn spring-boot:run
+```
+
+Backend runs on: `http://localhost:8080`
+
+### Start Frontend
+```bash
+cd campusconnect-frontend
+npm start
+```
+
+Frontend runs on: `http://localhost:3000`
+
+### Login Credentials
+- **Admin:** 
+  - Email: `admin@campusconnect.com`
+  - Password: `admin123`
+
+## 🌐 Deployment
+
+CampusConnect is deployed on Render and Vercel:
+
+- **Frontend:** https://campusconnect.vercel.app
+- **Backend:** https://campusconnect-backend.onrender.com
+
+For detailed deployment instructions, see [DEPLOYMENT.md](./docs/DEPLOYMENT.md)
+
+## 📚 Documentation
+
+### Quick Links
+- [Architecture Overview](./docs/ARCHITECTURE.md) - System design and architecture
+- [API Documentation](./docs/API_DOCUMENTATION.md) - REST API endpoints
+- [Database Schema](./docs/DATABASE_SCHEMA.md) - Database structure
+- [Setup Guide](./docs/SETUP.md) - Detailed installation guide
+- [Features Guide](./docs/FEATURES.md) - Complete features documentation
+- [Deployment Guide](./docs/DEPLOYMENT.md) - Deployment instructions
+
+## 🔌 API Endpoints
+
+### Authentication
+- `POST /api/auth/register` - Register new user
+- `POST /api/auth/login` - User login
+
+### Users
+- `GET /api/users` - Get all users
+- `GET /api/users/{id}` - Get user by ID
+- `PUT /api/users/{id}` - Update user profile
+
+### Posts
+- `GET /api/posts` - Get all posts
+- `POST /api/posts` - Create post
+- `PUT /api/posts/{id}` - Update post
+- `DELETE /api/posts/{id}` - Delete post
+- `POST /api/posts/{id}/like` - Like post
+- `DELETE /api/posts/{id}/unlike` - Unlike post
+
+### Jobs
+- `GET /api/jobs` - Get all jobs
+- `POST /api/jobs` - Create job (Alumni only)
+- `POST /api/jobs/{id}/apply` - Apply for job
+- `GET /api/jobs/{id}/applications` - Get applications
+- `PUT /api/jobs/applications/{id}/status` - Update application status
+
+### Events
+- `GET /api/events` - Get all events
+- `POST /api/events` - Create event (Faculty only)
+- `POST /api/events/{id}/attend` - Attend event
+- `DELETE /api/events/{id}/unattend` - Cancel event attendance
+
+### Admin
+- `GET /api/verification/pending` - Get pending verifications
+- `POST /api/verification/{id}/approve` - Approve user
+- `POST /api/verification/{id}/reject` - Reject user
+
+For complete API documentation, see [API_DOCUMENTATION.md](./docs/API_DOCUMENTATION.md)
+
+## 📊 Database Schema
+
+### Core Tables
+- **users** - User accounts and profiles
+- **posts** - Social media posts
+- **comments** - Post comments
+- **likes** - Post and comment likes
+- **follow_requests** - Follow relationships
+- **messages** - Direct messages
+- **events** - Campus events
+- **event_attendees** - Event attendance
+- **job_postings** - Job listings
+- **job_applications** - Job applications
+- **notifications** - User notifications
+- **verification_requests** - Account verification
+
+For detailed schema, see [DATABASE_SCHEMA.md](./docs/DATABASE_SCHEMA.md)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for:
+- Code of conduct
+- How to report issues
+- How to submit pull requests
+- Development guidelines
+
+### Quick Start for Contributors
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'Add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see [LICENSE](./LICENSE) file for details.
+
+## 📞 Support
+
+### Getting Help
+- **Issues:** Report bugs on [GitHub Issues](https://github.com/YOUR_USERNAME/campusconnect/issues)
+- **Discussions:** Join [GitHub Discussions](https://github.com/YOUR_USERNAME/campusconnect/discussions)
+- **Email:** campusconnect@example.com
+
+## 👥 Authors
+
+- **Avneesh Kumar** - Full Stack Developer
+  - GitHub: [@avneesh](https://github.com/YOUR_USERNAME)
+  - Email: avneesh@example.com
+
+## 🙏 Acknowledgments
+
+- Material-UI team for amazing UI components
+- Spring Boot community for excellent documentation
+- React community for best practices
+
+## 📈 Roadmap
+
+### Upcoming Features
+- [ ] Video calling for group discussions
+- [ ] Advanced search and filtering
+- [ ] Recommendation algorithm
+- [ ] Mobile app (iOS/Android)
+- [ ] File upload for resumes
+- [ ] Email notifications
+- [ ] Analytics dashboard
+- [ ] Groups and communities
+
+See [GitHub Projects](https://github.com/YOUR_USERNAME/campusconnect/projects) for current development status.
+
+---
+
+**⭐ If you find this project useful, please consider giving it a star!**
+
+Made with ❤️ by Avneesh Kumar
