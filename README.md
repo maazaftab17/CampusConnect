@@ -280,15 +280,15 @@ This project is licensed under the MIT License - see [LICENSE](./LICENSE) file f
 ## 📞 Support
 
 ### Getting Help
-- **Issues:** Report bugs on [GitHub Issues](https://github.com/YOUR_USERNAME/campusconnect/issues)
-- **Discussions:** Join [GitHub Discussions](https://github.com/YOUR_USERNAME/campusconnect/discussions)
-- **Email:** campusconnect@example.com
+- **Issues:** Report bugs on [GitHub Issues](https://github.com/Avneesh-kun/CampusConnect/issues)
+- **Discussions:** Join [GitHub Discussions](https://github.com/Avneesh-kun/CampusConnect/discussions)
+- **Email:** avneeshk0606@gmail.com
 
 ## 👥 Authors
 
-- **Avneesh Kumar** - Full Stack Developer
-  - GitHub: [@avneesh](https://github.com/YOUR_USERNAME)
-  - Email: avneesh@example.com
+- **Avneesh Kumar** - Software Engineer
+  - GitHub: [@avneesh](https://github.com/Avneesh-kun/CampusConnect)
+  - Email: avneeshk0606@gmail.com
 
 ## 🙏 Acknowledgments
 
@@ -308,10 +308,10 @@ This project is licensed under the MIT License - see [LICENSE](./LICENSE) file f
 - [ ] Analytics dashboard
 - [ ] Groups and communities
 
-See [GitHub Projects](https://github.com/YOUR_USERNAME/campusconnect/projects) for current development status.
+See [GitHub Projects](https://github.com/Avneesh-kun/CampusConnect/projects) for current development status.
 
 ---
 
 **⭐ If you find this project useful, please consider giving it a star!**
 
-Made with ❤️ by Avneesh Kumar
+Made with ❤️ by Avneesh Kumar & Team.
