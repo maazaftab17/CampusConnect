@@ -21,6 +21,53 @@
 - [License](#license)
 - [Support](#support)
 
+
+# CampusConnect 🚀
+
+CampusConnect is a full-stack web application designed to help students connect, collaborate, and manage campus activities. The project provides a modern user interface with a Spring Boot backend and React frontend.
+
+## 🌐 Live Demo
+
+Frontend:  
+https://campusconnect-frontend-6j8c.onrender.com
+
+Backend API:  
+https://campusconnect-1-83dn.onrender.com
+
+## ✨ Features
+
+- User authentication system
+- Secure login and registration
+- REST API based backend
+- React responsive frontend
+- Database integration
+- Frontend & backend communication
+- Cloud deployment using Render
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+
+### Backend
+- Java
+- Spring Boot
+- Spring Security
+- REST APIs
+- Maven
+
+### Database
+- MySQL
+
+### Deployment
+- Render Cloud Platform
+
+## 📂 Project Architecture
+
+
 ## 🎯 Overview
 
 CampusConnect is a modern social networking platform specifically designed for academic institutions. It bridges the gap between current students, alumni, and faculty members by providing tools for:
