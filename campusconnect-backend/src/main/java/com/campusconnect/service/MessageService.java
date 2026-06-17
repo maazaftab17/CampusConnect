@@ -10,7 +10,9 @@ import com.campusconnect.repository.ConversationRepository;
 import com.campusconnect.repository.MessageRepository;
 import com.campusconnect.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -108,7 +110,11 @@ public class MessageService {
 
     public long getUnreadMessageCount(Long userId) {
         User user = userRepository.findById(userId)
-                .orElseThrow(() -> new RuntimeException("User not found"));
+                // Change this:
+
+
+// To a dedicated custom exception or a ResponseStatusException:
+.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found"));
 
         return messageRepository.countByReceiverAndIsReadFalse(user);
     }
